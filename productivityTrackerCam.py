@@ -27,7 +27,7 @@ while True:
 
     # Apply face detection
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=12, minSize=(100, 145)) #OVO JE DOBRO NASTELOVANO
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=12, minSize=(100, 145)) #NIJE DOBRO NASTELOVANO, NASTELUJ!
     face_present = len(faces) > 0
 
     # Display the frame with rectangles around detected faces
